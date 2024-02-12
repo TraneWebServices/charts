@@ -44,7 +44,7 @@ php artisan vendor:publish --tag=charts-config
 php artisan vendor:publish --tag=charts-apexcharts-script
 ```
 
-## Usage:
+## Usage
 
 In your controller add:
 ```php
