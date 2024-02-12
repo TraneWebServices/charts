@@ -1,0 +1,60 @@
+{
+    "name": "tws/charts",
+    "license": "MIT",
+    "homepage": "https://tws.custura.de/",
+    "description": "Laravel Livewire Charts.",
+    "keywords": [
+        "tws",
+        "laravel",
+        "livewire",
+        "charts"
+    ],
+    "authors": [
+        {
+            "name": "Custură Laurențiu",
+            "email": "mail@custura.de"
+        }
+    ],
+    "require": {
+        "php": "^8.1.0",
+        "ext-json": "*",
+        "livewire/livewire": "^3.0",
+        "illuminate/support": "^10.17"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.11",
+        "phpunit/phpunit": "^10.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "TWS\\Charts\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TWS\\Charts\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "TWS\\Charts\\ChartsServiceProvider"
+            ],
+            "aliases": {
+                "Charts": "TWS\\Charts\\Facades\\Charts"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

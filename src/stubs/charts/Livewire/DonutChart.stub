@@ -1,0 +1,25 @@
+<?php
+
+namespace {{ namespace }};
+
+use TWS\Charts\Livewire;
+use TWS\Charts\Models\DonutChartModel;
+
+class {{ class }}
+{
+    protected $chart;
+
+    public function __construct(Charts $chart)
+    {
+        $this->chart = $chart;
+    }
+
+    public function build(): DonutChartModel
+    {
+        return $this->chart->donutChart()
+            ->addData([20, 24, 30])
+            ->setTitle('Top 3 scorers of the team.')
+            ->setSubtitle('Season 2021.')
+            ->setLabels(['Player 7', 'Player 10', 'Player 9']);
+    }
+}

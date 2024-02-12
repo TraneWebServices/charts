@@ -1,0 +1,26 @@
+<?php
+
+namespace {{ namespace }};
+
+use TWS\Charts\Livewire;
+use TWS\Charts\Models\RadarChartModel;
+
+class {{ class }}
+{
+    protected $chart;
+
+    public function __construct(Charts $chart)
+    {
+        $this->chart = $chart;
+    }
+
+    public function build(): RadarChartModel
+    {
+        return $this->chart->radarChart()
+            ->addData('Stats', [70, 93, 78, 97, 50, 90])
+            ->setTitle('Individual Player Stats.')
+            ->setSubtitle('Season 2021.')
+            ->setXAxis(['Pass', 'Dribble', 'Shot', 'Stamina', 'Long shots', 'Tactical'])
+            ->setMarkers(['#303F9F'], 7, 10);
+    }
+}

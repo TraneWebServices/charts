@@ -1,0 +1,26 @@
+<?php
+
+namespace {{ namespace }};
+
+use TWS\Charts\Livewire;
+use TWS\Charts\Models\HeatMapChartModel;
+
+class {{ class }}
+{
+    protected $chart;
+
+    public function __construct(Charts $chart)
+    {
+        $this->chart = $chart;
+    }
+
+    public function build(): HeatMapChartModel
+    {
+        return $this->chart->heatMapChart()
+            ->addData('Sales', [80, 50, 30, 40, 100, 20])
+            ->addHeat('Income', [70, 10, 80, 20, 60, 40])
+            ->setTitle('Basic radar chart')
+            ->setMarkers(['#FFA41B', '#4F46E5'], 7, 10)
+            ->setXAxis(['January', 'February', 'March', 'April', 'May', 'June']);
+    }
+}

@@ -1,0 +1,26 @@
+<?php
+
+namespace {{ namespace }};
+
+use TWS\Charts\Livewire;
+use TWS\Charts\Models\RadialChartModel;
+
+class {{ class }}
+{
+    protected $chart;
+
+    public function __construct(Charts $chart)
+    {
+        $this->chart = $chart;
+    }
+
+    public function build(): RadialChartModel
+    {
+        return $this->chart->radialChart()
+            ->addData([75, 60])
+            ->setTitle('Passing effectiveness.')
+            ->setSubtitle('Barcelona city vs Madrid sports.')
+            ->setLabels(['Barcelona city', 'Madrid sports'])
+            ->setColors(['#D32F2F', '#03A9F4']);
+    }
+}
