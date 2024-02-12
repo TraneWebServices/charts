@@ -21,8 +21,6 @@
 
 ## Installation
 
-Use composer.
-
 ```json
 "repositories": [
         {
