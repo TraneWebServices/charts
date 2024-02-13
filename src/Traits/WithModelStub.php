@@ -1,6 +1,6 @@
 <?php
 
-namespace TWS\Charts\Traits;
+namespace T\Charts\Traits;
 
 trait WithModelStub
 {

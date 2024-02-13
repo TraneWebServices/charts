@@ -1,9 +1,9 @@
 <?php
 
-namespace TWS\Charts\Models;
+namespace T\Charts\Models;
 
-use TWS\Charts\Contracts\AddsSimpleDatas;
-use TWS\Charts\Models\Traits\Aggregator\Simple;
+use T\Charts\Contracts\AddsSimpleDatas;
+use T\Charts\Models\Traits\Aggregator\Simple;
 
 class DonutChartModel extends ChartsBase implements AddsSimpleDatas
 {

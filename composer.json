@@ -1,5 +1,5 @@
 {
-    "name": "tws/charts",
+    "name": "t/charts",
     "license": "MIT",
     "homepage": "https://tws.custura.de/",
     "description": "Laravel Livewire Charts.",
@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "TWS\\Charts\\": "src/"
+            "T\\Charts\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "TWS\\Charts\\Tests\\": "tests/"
+            "T\\Charts\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -45,10 +45,10 @@
         },
         "laravel": {
             "providers": [
-                "TWS\\Charts\\ChartsServiceProvider"
+                "T\\Charts\\ChartsServiceProvider"
             ],
             "aliases": {
-                "Charts": "TWS\\Charts\\Facades\\Charts"
+                "Charts": "T\\Charts\\Facades\\Charts"
             }
         }
     },

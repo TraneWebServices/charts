@@ -1,13 +1,13 @@
 <?php
 
-namespace TWS\Charts\Livewire;
+namespace T\Charts\Livewire;
 
 use Livewire\Component;
-use TWS\Charts\Models\AreaChartModel;
+use T\Charts\Models\AreaChartModel;
 
 /**
  * Class LivewireAreaChart
- * @package TWS\Charts\Livewire
+ * @package T\Charts\Livewire
  */
 class LivewireAreaChart extends Component
 {

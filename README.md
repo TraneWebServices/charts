@@ -31,7 +31,7 @@
 ```
 
 ```bash
-composer require tws/charts
+composer require t/charts
 ```
 
 ```bash
@@ -54,12 +54,12 @@ $pie = Charts::pieChart()
 
 Remember to import the Facade to your controller with 
 ```php
-use TWS\Charts\Facades\Charts;
+use T\Charts\Facades\Charts;
 ```
 
 Or importing the Charts class:
 ```php
-use TWS\Charts\Charts;
+use T\Charts\Charts;
 ```
 
 In your Layouts (Blade file) add in <head>:

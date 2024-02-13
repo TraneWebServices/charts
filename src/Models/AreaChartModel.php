@@ -1,9 +1,9 @@
 <?php
 
-namespace TWS\Charts\Models;
+namespace T\Charts\Models;
 
-use TWS\Charts\Contracts\AddsComplexDatas;
-use TWS\Charts\Models\Traits\Aggregator\Complex;
+use T\Charts\Contracts\AddsComplexDatas;
+use T\Charts\Models\Traits\Aggregator\Complex;
 
 class AreaChartModel extends ChartsBase implements AddsComplexDatas
 {

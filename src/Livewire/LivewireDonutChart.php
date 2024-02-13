@@ -1,13 +1,13 @@
 <?php
 
-namespace TWS\Charts\Livewire;
+namespace T\Charts\Livewire;
 
 use Livewire\Component;
-use TWS\Charts\Models\DonutChartModel;
+use T\Charts\Models\DonutChartModel;
 
 /**
  * Class LivewireDonutChart
- * @package TWS\Charts\Livewire
+ * @package T\Charts\Livewire
  */
 class LivewireDonutChart extends Component
 {

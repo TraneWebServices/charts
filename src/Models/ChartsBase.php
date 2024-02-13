@@ -1,38 +1,38 @@
 <?php
 
-namespace TWS\Charts\Models;
+namespace T\Charts\Models;
 
 use Illuminate\Support\Str;
-use TWS\Charts\Models\Traits\ChartContainer;
-use TWS\Charts\Models\Traits\HasGrid;
-use TWS\Charts\Models\Traits\HasType;
-use TWS\Charts\Models\Traits\HasZoom;
-use TWS\Charts\Models\Traits\HasTitle;
-use TWS\Charts\Models\Traits\HasWidth;
-use TWS\Charts\Models\Traits\HasXAxis;
-use TWS\Charts\Models\Traits\HasColors;
-use TWS\Charts\Models\Traits\HasHeight;
-use TWS\Charts\Models\Traits\HasLabels;
-use TWS\Charts\Models\Traits\HasStroke;
-use TWS\Charts\Models\Traits\HasDataSet;
-use TWS\Charts\Models\Traits\HasMarkers;
-use TWS\Charts\Models\Traits\HasStacked;
-use TWS\Charts\Models\Traits\HasToolBar;
-use TWS\Charts\Models\Traits\HasSubTitle;
-use TWS\Charts\Models\Traits\HasForeColor;
-use TWS\Charts\Models\Traits\HasSparkLine;
-use TWS\Charts\Models\Traits\HasDataLabels;
-use TWS\Charts\Models\Traits\HasDistributed;
-use TWS\Charts\Models\Traits\HasFontFamily;
-use TWS\Charts\Models\Traits\HasHorizontal;
-use TWS\Charts\Models\Traits\HasJsonConfig;
-use TWS\Charts\Models\Traits\HasLegend;
-use TWS\Charts\Models\Traits\HasTheme;
-use TWS\Charts\Models\Traits\HasYAxis;
+use T\Charts\Models\Traits\ChartContainer;
+use T\Charts\Models\Traits\HasColors;
+use T\Charts\Models\Traits\HasDataLabels;
+use T\Charts\Models\Traits\HasDataSet;
+use T\Charts\Models\Traits\HasDistributed;
+use T\Charts\Models\Traits\HasFontFamily;
+use T\Charts\Models\Traits\HasForeColor;
+use T\Charts\Models\Traits\HasGrid;
+use T\Charts\Models\Traits\HasHeight;
+use T\Charts\Models\Traits\HasHorizontal;
+use T\Charts\Models\Traits\HasJsonConfig;
+use T\Charts\Models\Traits\HasLabels;
+use T\Charts\Models\Traits\HasLegend;
+use T\Charts\Models\Traits\HasMarkers;
+use T\Charts\Models\Traits\HasSparkLine;
+use T\Charts\Models\Traits\HasStacked;
+use T\Charts\Models\Traits\HasStroke;
+use T\Charts\Models\Traits\HasSubTitle;
+use T\Charts\Models\Traits\HasTheme;
+use T\Charts\Models\Traits\HasTitle;
+use T\Charts\Models\Traits\HasToolBar;
+use T\Charts\Models\Traits\HasType;
+use T\Charts\Models\Traits\HasWidth;
+use T\Charts\Models\Traits\HasXAxis;
+use T\Charts\Models\Traits\HasYAxis;
+use T\Charts\Models\Traits\HasZoom;
 
 /**
  * Class ChartsBase
- * @package TWS\Charts\Models
+ * @package T\Charts\Models
  */
 class ChartsBase
 {

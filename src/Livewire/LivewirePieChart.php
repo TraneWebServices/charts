@@ -1,13 +1,13 @@
 <?php
 
-namespace TWS\Charts\Livewire;
+namespace T\Charts\Livewire;
 
 use Livewire\Component;
-use TWS\Charts\Models\PieChartModel;
+use T\Charts\Models\PieChartModel;
 
 /**
  * Class LivewirePieChart
- * @package TWS\Charts\Livewire
+ * @package T\Charts\Livewire
  */
 class LivewirePieChart extends Component
 {

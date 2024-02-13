@@ -1,21 +1,21 @@
 <?php
 
-namespace TWS\Charts\Tests\Feature;
+namespace T\Charts\Tests\Feature;
 
-use Livewire\Livewire;
-use TWS\Charts\Tests\TestCase;
-use TWS\Charts\Facades\Charts;
-use TWS\Charts\Livewire\LivewireAreaChart;
-use TWS\Charts\Livewire\LivewireBarChart;
-use TWS\Charts\Livewire\LivewireDonutChart;
-use TWS\Charts\Livewire\LivewireHeatMapChart;
-use TWS\Charts\Livewire\LivewireHorizontalBar;
-use TWS\Charts\Livewire\LivewireLineChart;
-use TWS\Charts\Livewire\LivewirePieChart;
-use TWS\Charts\Livewire\LivewirePolarAreaChart;
-use TWS\Charts\Livewire\LivewireRadarChart;
-use TWS\Charts\Livewire\LivewireRadialChart;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Livewire\Livewire;
+use T\Charts\Facades\Charts;
+use T\Charts\Livewire\LivewireAreaChart;
+use T\Charts\Livewire\LivewireBarChart;
+use T\Charts\Livewire\LivewireDonutChart;
+use T\Charts\Livewire\LivewireHeatMapChart;
+use T\Charts\Livewire\LivewireHorizontalBar;
+use T\Charts\Livewire\LivewireLineChart;
+use T\Charts\Livewire\LivewirePieChart;
+use T\Charts\Livewire\LivewirePolarAreaChart;
+use T\Charts\Livewire\LivewireRadarChart;
+use T\Charts\Livewire\LivewireRadialChart;
+use T\Charts\Tests\TestCase;
 
 class ChartsTest extends TestCase
 {

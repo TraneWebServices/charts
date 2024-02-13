@@ -1,10 +1,10 @@
 <?php
 
-namespace TWS\Charts\Tests;
+namespace T\Charts\Tests;
 
-use TWS\Charts\ChartsServiceProvider;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as TestbenchTestCase;
+use T\Charts\ChartsServiceProvider;
 
 class TestCase extends TestbenchTestCase
 {
@@ -30,7 +30,7 @@ class TestCase extends TestbenchTestCase
     protected function getPackageAliases($app): array
     {
         return [
-            'Charts' => \TWS\Charts\Facades\Charts::class
+            'Charts' => \T\Charts\Facades\Charts::class
         ];
     }
 

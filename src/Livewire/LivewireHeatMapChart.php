@@ -1,13 +1,13 @@
 <?php
 
-namespace TWS\Charts\Livewire;
+namespace T\Charts\Livewire;
 
 use Livewire\Component;
-use TWS\Charts\Models\HeatMapChartModel;
+use T\Charts\Models\HeatMapChartModel;
 
 /**
  * Class LivewireHeatMapChart
- * @package TWS\Charts\Livewire
+ * @package T\Charts\Livewire
  */
 class LivewireHeatMapChart extends Component
 {

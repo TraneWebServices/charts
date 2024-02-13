@@ -1,6 +1,6 @@
 <?php
 
-namespace TWS\Charts\Contracts;
+namespace T\Charts\Contracts;
 
 interface AddsSimpleDatas
 {

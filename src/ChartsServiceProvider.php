@@ -1,23 +1,23 @@
 <?php
 
-namespace TWS\Charts;
+namespace T\Charts;
 
-use Livewire\Livewire;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use TWS\Charts\Charts;
-use TWS\Charts\Console\InstallCommand;
-use TWS\Charts\Console\MakeChartCommand;
-use TWS\Charts\Livewire\LivewireAreaChart;
-use TWS\Charts\Livewire\LivewireBarChart;
-use TWS\Charts\Livewire\LivewireDonutChart;
-use TWS\Charts\Livewire\LivewireHeatMapChart;
-use TWS\Charts\Livewire\LivewireHorizontalBar;
-use TWS\Charts\Livewire\LivewireLineChart;
-use TWS\Charts\Livewire\LivewirePieChart;
-use TWS\Charts\Livewire\LivewirePolarAreaChart;
-use TWS\Charts\Livewire\LivewireRadarChart;
-use TWS\Charts\Livewire\LivewireRadialChart;
+use Livewire\Livewire;
+use T\Charts\Charts;
+use T\Charts\Console\InstallCommand;
+use T\Charts\Console\MakeChartCommand;
+use T\Charts\Livewire\LivewireAreaChart;
+use T\Charts\Livewire\LivewireBarChart;
+use T\Charts\Livewire\LivewireDonutChart;
+use T\Charts\Livewire\LivewireHeatMapChart;
+use T\Charts\Livewire\LivewireHorizontalBar;
+use T\Charts\Livewire\LivewireLineChart;
+use T\Charts\Livewire\LivewirePieChart;
+use T\Charts\Livewire\LivewirePolarAreaChart;
+use T\Charts\Livewire\LivewireRadarChart;
+use T\Charts\Livewire\LivewireRadialChart;
 
 class ChartsServiceProvider extends ServiceProvider
 {

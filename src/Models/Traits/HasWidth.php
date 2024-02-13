@@ -1,6 +1,6 @@
 <?php
 
-namespace TWS\Charts\Models\Traits;
+namespace T\Charts\Models\Traits;
 
 trait HasWidth
 {

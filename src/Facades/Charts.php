@@ -1,6 +1,6 @@
 <?php
 
-namespace TWS\Charts\Facades;
+namespace T\Charts\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,17 +1,17 @@
 <?php
 
-namespace TWS\Charts;
+namespace T\Charts;
 
-use TWS\Charts\Models\AreaChartModel;
-use TWS\Charts\Models\BarChartModel;
-use TWS\Charts\Models\DonutChartModel;
-use TWS\Charts\Models\HeatMapChartModel;
-use TWS\Charts\Models\HorizontalBarModel;
-use TWS\Charts\Models\LineChartModel;
-use TWS\Charts\Models\PieChartModel;
-use TWS\Charts\Models\PolarAreaChartModel;
-use TWS\Charts\Models\RadarChartModel;
-use TWS\Charts\Models\RadialChartModel;
+use T\Charts\Models\AreaChartModel;
+use T\Charts\Models\BarChartModel;
+use T\Charts\Models\DonutChartModel;
+use T\Charts\Models\HeatMapChartModel;
+use T\Charts\Models\HorizontalBarModel;
+use T\Charts\Models\LineChartModel;
+use T\Charts\Models\PieChartModel;
+use T\Charts\Models\PolarAreaChartModel;
+use T\Charts\Models\RadarChartModel;
+use T\Charts\Models\RadialChartModel;
 
 class Charts
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace TWS\Charts\Tests\Unit;
+namespace T\Charts\Tests\Unit;
 
-use TWS\Charts\Facades\Charts;
-use TWS\Charts\Tests\TestCase;
 use Illuminate\Support\Facades\Artisan;
+use T\Charts\Facades\Charts;
+use T\Charts\Tests\TestCase;
 
 class ChartsTest extends TestCase
 {

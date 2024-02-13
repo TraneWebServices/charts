@@ -1,6 +1,6 @@
 <?php
 
-namespace TWS\Charts\Console;
+namespace T\Charts\Console;
 
 use Illuminate\Console\Command;
 

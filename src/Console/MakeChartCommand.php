@@ -1,10 +1,10 @@
 <?php
 
-namespace TWS\Charts\Console;
+namespace T\Charts\Console;
 
-use TWS\Charts\Traits\WithModelStub;
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputArgument;
+use T\Charts\Traits\WithModelStub;
 
 class MakeChartCommand extends GeneratorCommand
 {

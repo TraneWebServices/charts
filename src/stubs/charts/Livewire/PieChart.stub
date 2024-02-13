@@ -2,8 +2,8 @@
 
 namespace {{ namespace }};
 
-use TWS\Charts\Livewire;
-use TWS\Charts\Models\PieChartModel;
+use T\Charts\Livewire;
+use T\Charts\Models\PieChartModel;
 
 class {{ class }}
 {

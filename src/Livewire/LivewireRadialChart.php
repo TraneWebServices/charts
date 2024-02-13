@@ -1,13 +1,13 @@
 <?php
 
-namespace TWS\Charts\Livewire;
+namespace T\Charts\Livewire;
 
 use Livewire\Component;
-use TWS\Charts\Models\RadialChartModel;
+use T\Charts\Models\RadialChartModel;
 
 /**
  * Class LivewireRadialChart
- * @package TWS\Charts\Livewire
+ * @package T\Charts\Livewire
  */
 class LivewireRadialChart extends Component
 {

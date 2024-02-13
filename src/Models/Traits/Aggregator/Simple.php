@@ -1,6 +1,6 @@
 <?php
 
-namespace TWS\Charts\Models\Traits\Aggregator;
+namespace T\Charts\Models\Traits\Aggregator;
 
 trait Simple
 {
