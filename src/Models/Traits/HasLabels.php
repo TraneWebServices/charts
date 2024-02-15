@@ -9,6 +9,7 @@ trait HasLabels
     public function setLabels(array $labels): self
     {
         $this->labels = $labels;
+
         return $this;
     }
 

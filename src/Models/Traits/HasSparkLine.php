@@ -9,6 +9,7 @@ trait HasSparkLine
     public function setSparkline(bool $enabled = true): self
     {
         $this->sparkline = json_encode(['enabled' => $enabled]);
+
         return $this;
     }
 

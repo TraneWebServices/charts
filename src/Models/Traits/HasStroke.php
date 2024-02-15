@@ -18,6 +18,7 @@ trait HasStroke
             'colors'  =>  $colors,
             'curve'   =>  $curve,
         ]);
+
         return $this;
     }
 

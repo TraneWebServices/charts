@@ -9,6 +9,7 @@ trait HasZoom
     public function setZoom(string $zoom): self
     {
         $this->zoom = json_encode($zoom);
+
         return $this;
     }
 

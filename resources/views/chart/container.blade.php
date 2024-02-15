@@ -24,6 +24,10 @@
         colors: {!! $chart->colors() !!},
         series: {!! $chart->dataset() !!},
         dataLabels: {!! $chart->dataLabels() !!},
+        theme: {
+            mode: "{!! $chart->theme() !!}",
+        },
+        tooltip: {!! $chart->tooltip() !!},
         @if($chart->labels())
             labels: {!! json_encode($chart->labels(), true) !!},
         @endif

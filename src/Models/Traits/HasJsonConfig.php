@@ -9,6 +9,7 @@ trait HasJsonConfig
     public function setJsonConfig($jsonConfig): self
     {
         $this->horizontal = json_encode(['jsonConfig' => $jsonConfig]);
+
         return $this;
     }
 

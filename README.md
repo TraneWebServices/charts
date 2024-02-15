@@ -171,3 +171,13 @@ Set Theme
 ```php
     ->setTheme('dark')
 ```
+
+Set Toolbar
+```php
+    ->setToolbar(bool)
+```
+
+Set Tooltip
+```php
+    ->setTooltip(bool, 'dark/light')
+```

@@ -3,6 +3,7 @@
 namespace T\Charts\Models;
 
 use Illuminate\Support\Str;
+use T\Charts\Models\Traits\HasTooltip;
 
 /**
  * Class ChartsBase
@@ -29,7 +30,8 @@ class ChartsBase
     use Traits\HasMarkers;
     use Traits\HasStacked;
     use Traits\HasStroke;
-    use Traits\HasToolBar;
+    use Traits\HasToolbar;
+    use Traits\HasTooltip;
     use Traits\HasZoom;
     use Traits\HasSparkLine;
     use Traits\HasJsonConfig;
@@ -50,7 +52,9 @@ class ChartsBase
         $this->initGrid();
         $this->initLegend();
         $this->initMarkers();
-        $this->initToolBar();
+        $this->initToolbar();
+        $this->initTooltip();
+        $this->initTheme();
         $this->initZoom();
         $this->initDataLabels();
         $this->initSparkLine();
@@ -90,6 +94,7 @@ class ChartsBase
             'theme' => [
                 'mode' => $this->theme(),
             ],
+            'tooltip' => json_decode($this->tooltip()),
             'title' => [
                 'text' => $this->title(),
             ],

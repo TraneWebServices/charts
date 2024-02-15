@@ -15,6 +15,7 @@ trait HasType
     public function setType(string $type = null): self
     {
         $this->type = $type;
+
         return $this;
     }
 

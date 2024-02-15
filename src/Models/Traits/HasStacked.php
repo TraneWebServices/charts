@@ -9,6 +9,7 @@ trait HasStacked
     public function setStacked(bool $stacked = true): self
     {
         $this->stacked = $stacked;
+
         return $this;
     }
 

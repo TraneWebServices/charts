@@ -9,6 +9,7 @@ trait HasColors
     public function setColors(array $colors): self
     {
         $this->colors = json_encode($colors);
+
         return $this;
     }
 

@@ -9,6 +9,7 @@ trait HasDistributed
     public function setDistributed(bool $distributed): self
     {
         $this->distributed = $distributed;
+
         return $this;
     }
 

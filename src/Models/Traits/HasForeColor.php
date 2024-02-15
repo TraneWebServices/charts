@@ -9,6 +9,7 @@ trait HasForeColor
     public function setFontColor(string $fontColor): self
     {
         $this->foreColor = $fontColor;
+
         return $this;
     }
 

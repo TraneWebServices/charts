@@ -9,6 +9,7 @@ trait HasFontFamily
     public function setFontFamily(string $fontFamily): self
 	{
 		$this->fontFamily = $fontFamily;
+
 		return $this;
 	}
 

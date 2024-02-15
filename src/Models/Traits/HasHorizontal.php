@@ -9,6 +9,7 @@ trait HasHorizontal
     public function setHorizontal(bool $horizontal): self
     {
         $this->horizontal = $horizontal;
+
         return $this;
     }
 

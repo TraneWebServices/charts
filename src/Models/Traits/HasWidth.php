@@ -9,6 +9,7 @@ trait HasWidth
     public function setWidth(int $width): self
     {
         $this->width = $width;
+
         return $this;
     }
 

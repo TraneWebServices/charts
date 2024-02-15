@@ -9,7 +9,18 @@ trait HasTheme
     public function setTheme(string $theme): self
     {
         $this->theme = $theme;
+
         return $this;
+    }
+
+    protected function initTheme(): void
+    {
+        $this->theme = $this->defaultTheme();
+    }
+
+    private function defaultTheme(): string
+    {
+        return 'light';
     }
 
     public function theme(): string

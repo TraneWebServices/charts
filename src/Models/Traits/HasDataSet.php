@@ -9,6 +9,7 @@ trait HasDataSet
     public function setDataset(array $dataset): self
     {
         $this->dataset = json_encode($dataset);
+
         return $this;
     }
 

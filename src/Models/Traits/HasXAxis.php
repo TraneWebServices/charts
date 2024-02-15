@@ -9,6 +9,7 @@ trait HasXAxis
     public function setXAxis(array $categories): self
     {
         $this->xAxis = json_encode($categories);
+
         return $this;
     }
 

@@ -11,6 +11,7 @@ trait HasSubTitle
     {
         $this->subtitle = $subtitle;
         $this->subtitlePosition = $position;
+
         return $this;
     }
 

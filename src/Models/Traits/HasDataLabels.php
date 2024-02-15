@@ -9,6 +9,7 @@ trait HasDataLabels
     public function setDataLabels(bool $enabled = true): self
     {
         $this->dataLabels = json_encode(['enabled' => $enabled]);
+
         return $this;
     }
 
