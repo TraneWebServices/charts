@@ -3,32 +3,6 @@
 namespace T\Charts\Models;
 
 use Illuminate\Support\Str;
-use T\Charts\Models\Traits\ChartContainer;
-use T\Charts\Models\Traits\HasColors;
-use T\Charts\Models\Traits\HasDataLabels;
-use T\Charts\Models\Traits\HasDataSet;
-use T\Charts\Models\Traits\HasDistributed;
-use T\Charts\Models\Traits\HasFontFamily;
-use T\Charts\Models\Traits\HasForeColor;
-use T\Charts\Models\Traits\HasGrid;
-use T\Charts\Models\Traits\HasHeight;
-use T\Charts\Models\Traits\HasHorizontal;
-use T\Charts\Models\Traits\HasJsonConfig;
-use T\Charts\Models\Traits\HasLabels;
-use T\Charts\Models\Traits\HasLegend;
-use T\Charts\Models\Traits\HasMarkers;
-use T\Charts\Models\Traits\HasSparkLine;
-use T\Charts\Models\Traits\HasStacked;
-use T\Charts\Models\Traits\HasStroke;
-use T\Charts\Models\Traits\HasSubTitle;
-use T\Charts\Models\Traits\HasTheme;
-use T\Charts\Models\Traits\HasTitle;
-use T\Charts\Models\Traits\HasToolBar;
-use T\Charts\Models\Traits\HasType;
-use T\Charts\Models\Traits\HasWidth;
-use T\Charts\Models\Traits\HasXAxis;
-use T\Charts\Models\Traits\HasYAxis;
-use T\Charts\Models\Traits\HasZoom;
 
 /**
  * Class ChartsBase
@@ -36,32 +10,32 @@ use T\Charts\Models\Traits\HasZoom;
  */
 class ChartsBase
 {
-    use HasType;
-    use HasTitle;
-    use HasTheme;
-    use HasSubTitle;
-    use HasLabels;
-    use HasDataLabels;
-    use HasFontFamily;
-    use HasForeColor;
-    use HasDataSet;
-    use HasHeight;
-    use HasWidth;
-    use HasColors;
-    use HasHorizontal;
-    use HasDistributed;
-    use HasXAxis;
-    use HasGrid;
-    use HasMarkers;
-    use HasStacked;
-    use HasStroke;
-    use HasToolBar;
-    use HasZoom;
-    use HasSparkLine;
-    use HasJsonConfig;
-    use ChartContainer;
-    use HasLegend;
-    use HasYAxis;
+    use Traits\HasType;
+    use Traits\HasTitle;
+    use Traits\HasTheme;
+    use Traits\HasSubTitle;
+    use Traits\HasLabels;
+    use Traits\HasDataLabels;
+    use Traits\HasFontFamily;
+    use Traits\HasForeColor;
+    use Traits\HasDataSet;
+    use Traits\HasHeight;
+    use Traits\HasWidth;
+    use Traits\HasColors;
+    use Traits\HasHorizontal;
+    use Traits\HasDistributed;
+    use Traits\HasXAxis;
+    use Traits\HasGrid;
+    use Traits\HasMarkers;
+    use Traits\HasStacked;
+    use Traits\HasStroke;
+    use Traits\HasToolBar;
+    use Traits\HasZoom;
+    use Traits\HasSparkLine;
+    use Traits\HasJsonConfig;
+    use Traits\ChartContainer;
+    use Traits\HasLegend;
+    use Traits\HasYAxis;
 
     public $key;
 

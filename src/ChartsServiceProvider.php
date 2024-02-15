@@ -8,16 +8,6 @@ use Livewire\Livewire;
 use T\Charts\Charts;
 use T\Charts\Console\InstallCommand;
 use T\Charts\Console\MakeChartCommand;
-use T\Charts\Livewire\LivewireAreaChart;
-use T\Charts\Livewire\LivewireBarChart;
-use T\Charts\Livewire\LivewireDonutChart;
-use T\Charts\Livewire\LivewireHeatMapChart;
-use T\Charts\Livewire\LivewireHorizontalBar;
-use T\Charts\Livewire\LivewireLineChart;
-use T\Charts\Livewire\LivewirePieChart;
-use T\Charts\Livewire\LivewirePolarAreaChart;
-use T\Charts\Livewire\LivewireRadarChart;
-use T\Charts\Livewire\LivewireRadialChart;
 
 class ChartsServiceProvider extends ServiceProvider
 {
@@ -70,16 +60,16 @@ class ChartsServiceProvider extends ServiceProvider
             $this->packageBasePath('stubs/stubs') => base_path('stubs')
         ], 'charts-stubs');
 
-        Livewire::component('charts-area-chart', LivewireAreaChart::class);
-        Livewire::component('charts-bar-chart', LivewireBarChart::class);
-        Livewire::component('charts-donut-chart', LivewireDonutChart::class);
-        Livewire::component('charts-heatmap-chart', LivewireHeatMapChart::class);
-        Livewire::component('charts-horizontal-bar', LivewireHorizontalBar::class);
-        Livewire::component('charts-line-chart', LivewireLineChart::class);
-        Livewire::component('charts-pie-chart', LivewirePieChart::class);
-        Livewire::component('charts-polar-chart', LivewirePolarAreaChart::class);
-        Livewire::component('charts-radar-chart', LivewireRadarChart::class);
-        Livewire::component('charts-radial-chart', LivewireRadialChart::class);
+        Livewire::component('charts-area-chart', \T\Charts\Livewire\LivewireAreaChart::class);
+        Livewire::component('charts-bar-chart', \T\Charts\Livewire\LivewireBarChart::class);
+        Livewire::component('charts-donut-chart', \T\Charts\Livewire\LivewireDonutChart::class);
+        Livewire::component('charts-heatmap-chart', \T\Charts\Livewire\LivewireHeatMapChart::class);
+        Livewire::component('charts-horizontal-bar', \T\Charts\Livewire\LivewireHorizontalBar::class);
+        Livewire::component('charts-line-chart', \T\Charts\Livewire\LivewireLineChart::class);
+        Livewire::component('charts-pie-chart', \T\Charts\Livewire\LivewirePieChart::class);
+        Livewire::component('charts-polar-chart', \T\Charts\Livewire\LivewirePolarAreaChart::class);
+        Livewire::component('charts-radar-chart', \T\Charts\Livewire\LivewireRadarChart::class);
+        Livewire::component('charts-radial-chart', \T\Charts\Livewire\LivewireRadialChart::class);
 
         Blade::directive('chartsScripts', function () {
             $scriptsUrl = asset('/vendor/charts/charts.js');
