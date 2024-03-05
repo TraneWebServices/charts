@@ -3,7 +3,6 @@
 namespace T\Charts\Models;
 
 use Illuminate\Support\Str;
-use T\Charts\Models\Traits\HasTooltip;
 
 /**
  * Class ChartsBase
