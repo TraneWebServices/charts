@@ -6,7 +6,7 @@ trait HasToolbar
 {
     protected string $toolbar;
 
-    public function setToolbar(bool $show, bool $zoom = true): self
+    public function setToolbar(bool $show = true, bool $zoom = true): self
     {
         $this->toolbar = json_encode(['show' => $show]);
         $this->zoom = json_encode(['enabled' => $zoom ? $zoom : false]);

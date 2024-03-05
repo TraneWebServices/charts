@@ -14,6 +14,7 @@
             @if($chart->stacked())
             stacked: {!! $chart->stacked() !!},
             @endif
+            animations: {!! $chart->animations() !!},
         },
         plotOptions: {
             bar: {

@@ -6,7 +6,7 @@ trait HasTooltip
 {
     protected string $tooltip;
 
-    public function setTooltip(bool $show, string $theme = 'dark'): self
+    public function setTooltip(bool $show = true, string $theme = 'dark'): self
     {
         $this->tooltip = json_encode([
             'enabled' => $show,

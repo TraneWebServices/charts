@@ -21,8 +21,7 @@ class ChartsTest extends TestCase
 {
     use RefreshDatabase;
 
-    /** @test */
-    public function it_tests_charts_can_render_pie_charts_by_default(): void
+    public function test_it_tests_charts_can_render_pie_charts_by_default(): void
     {
         $chart = Charts::pieChart()->setTitle('Users Test Chart');
         $this->assertEquals('pie', $chart->type());
@@ -31,8 +30,7 @@ class ChartsTest extends TestCase
         $this->assertEquals('area', $anotherChart->type());
     }
 
-    /** @test */
-    public function it_tests_charts_can_render_pie_chart(): void
+    public function test_it_tests_charts_can_render_pie_chart(): void
     {
         $chart = Charts::pieChart()
             ->setLabels(['Product One', 'Product Two', 'Product Three'])
@@ -45,8 +43,7 @@ class ChartsTest extends TestCase
         $this->assertNotNull(Livewire::test(LivewirePieChart::class));
     }
 
-    /** @test */
-    public function it_tests_charts_can_render_donut_chart(): void
+    public function test_it_tests_charts_can_render_donut_chart(): void
     {
         $chart = Charts::donutChart()
             ->setXAxis(['Jan', 'Feb', 'Mar'])
@@ -57,8 +54,7 @@ class ChartsTest extends TestCase
         $this->assertNotNull(Livewire::test(LivewireDonutChart::class));
     }
 
-    /** @test */
-    public function it_tests_charts_can_render_radial_bar_charts(): void
+    public function test_it_tests_charts_can_render_radial_bar_charts(): void
     {
         $chart = Charts::radialChart()
             ->setXAxis(['Jan', 'Feb', 'Mar'])
@@ -69,8 +65,7 @@ class ChartsTest extends TestCase
         $this->assertNotNull(Livewire::test(LivewireRadialChart::class));
     }
 
-    /** @test */
-    public function it_tests_charts_can_render_polar_chart(): void
+    public function test_it_tests_charts_can_render_polar_chart(): void
     {
         $chart = Charts::polarAreaChart()
             ->setXAxis(['Jan', 'Feb', 'Mar'])
@@ -81,8 +76,7 @@ class ChartsTest extends TestCase
         $this->assertNotNull(Livewire::test(LivewirePolarAreaChart::class));
     }
 
-    /** @test */
-    public function charts_can_render_line_charts(): void
+    public function test_charts_can_render_line_charts(): void
     {
         $chart = Charts::lineChart()
             ->setXAxis([
@@ -104,8 +98,7 @@ class ChartsTest extends TestCase
         $this->assertNotNull(Livewire::test(LivewireLineChart::class));
     }
 
-    /** @test */
-    public function it_tests_charts_can_create_an_area_chart(): void
+    public function test_it_tests_charts_can_create_an_area_chart(): void
     {
         $chart = Charts::areaChart()
             ->setXAxis([
@@ -128,8 +121,7 @@ class ChartsTest extends TestCase
         $this->assertNotNull(Livewire::test(LivewireAreaChart::class));
     }
 
-    /** @test */
-    public function it_tests_charts_can_render_bar_charts(): void
+    public function test_it_tests_charts_can_render_bar_charts(): void
     {
         $chart = Charts::barChart()
             ->setDataset([
@@ -165,8 +157,7 @@ class ChartsTest extends TestCase
         $this->assertNotNull(Livewire::test(LivewireBarChart::class));
     }
 
-    /** @test */
-    public function it_tests_charts_can_render_stacked_bar_chart(): void
+    public function test_it_tests_charts_can_render_stacked_bar_chart(): void
     {
         $chart = Charts::barChart()
             ->setStacked(true)
@@ -192,8 +183,7 @@ class ChartsTest extends TestCase
         $this->assertTrue($chart->stacked());
     }
 
-    /** @test */
-    public function it_tests_charts_can_render_horizontal_bar_chart(): void
+    public function test_it_tests_charts_can_render_horizontal_bar_chart(): void
     {
         $chart = Charts::barChart()
             ->setHorizontal(true)
@@ -219,8 +209,7 @@ class ChartsTest extends TestCase
         $this->assertTrue((bool)$chart->horizontal());
     }
 
-    /** @test */
-    public function it_tests_charts_can_render_heatmap_chart(): void
+    public function test_it_tests_charts_can_render_heatmap_chart(): void
     {
         $chart = Charts::heatMapChart()
             ->setXAxis([
@@ -242,8 +231,7 @@ class ChartsTest extends TestCase
         $this->assertNotNull(Livewire::test(LivewireHeatMapChart::class));
     }
 
-    /** @test */
-    public function it_tests_charts_can_render_radar_chart(): void
+    public function test_it_tests_charts_can_render_radar_chart(): void
     {
         $chart = Charts::radarChart()
             ->setXAxis([

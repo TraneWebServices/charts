@@ -181,3 +181,8 @@ Set Tooltip
 ```php
     ->setTooltip(bool, 'dark/light')
 ```
+
+Set Animations
+```php
+    ->setAnimations(bool)
+```

@@ -8,8 +8,7 @@ use T\Charts\Tests\TestCase;
 
 class ChartsTest extends TestCase
 {
-    /** @test */
-    public function it_tests_charts_install_add_chart_stubs(): void
+    public function test_it_tests_charts_install_add_chart_stubs(): void
     {
         Artisan::call('vendor:publish --all');
 
@@ -33,8 +32,7 @@ class ChartsTest extends TestCase
         });
     }
 
-    /** @test */
-    public function it_tests_charts_can_load_script_correctly(): void
+    public function test_it_tests_charts_can_load_script_correctly(): void
     {
         $chart = Charts::pieChart()
             ->setXAxis(['Jan', 'Feb', 'Mar'])
@@ -45,8 +43,7 @@ class ChartsTest extends TestCase
         $this->assertEquals($chart->dataset(), "[150,120]");
     }
 
-    /** @test */
-    public function it_tests_charts_can_change_default_config_colors(): void
+    public function test_it_tests_charts_can_change_default_config_colors(): void
     {
         $chart = Charts::pieChart()
             ->setXAxis(['Jan', 'Feb', 'Mar'])

@@ -11,6 +11,7 @@ use T\Charts\Models\Traits\HasTooltip;
  */
 class ChartsBase
 {
+    use Traits\HasAnimations;
     use Traits\HasType;
     use Traits\HasTitle;
     use Traits\HasTheme;
@@ -44,6 +45,7 @@ class ChartsBase
     public function __construct()
     {
         $this->key = $this->reactiveKey();
+        $this->initAnimations();
         $this->initHorizontal();
         $this->initDistributed();
         $this->initColors();
@@ -81,6 +83,7 @@ class ChartsBase
                 'foreColor' => $this->foreColor(),
                 'sparkline' => json_decode($this->sparkline()),
                 'stacked' => $this->stacked(),
+                'animations' => json_decode($this->animations()),
             ],
             'plotOptions' => [
                 'bar' => [
